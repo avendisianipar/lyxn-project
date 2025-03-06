@@ -1,9 +1,9 @@
-import { root } from '@lynx-js/react'
+import { root } from "@lynx-js/react";
+import { furnituresPictures } from "./Pictures/furnitures/furnituresPictures.jsx";
+import Gallery from "./Gallery.jsx";
 
-import { App } from './App.js'
-
-root.render(<App />)
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
+function GalleryComplete() {
+    return <Gallery pictureData={furnituresPictures} />;
 }
+
+root.render(<GalleryComplete />);
